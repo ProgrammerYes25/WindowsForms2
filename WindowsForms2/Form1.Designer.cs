@@ -28,13 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lblFormTitle1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblFormTitle1
+            // 
+            this.lblFormTitle1.BackColor = System.Drawing.Color.MistyRose;
+            this.lblFormTitle1.Font = new System.Drawing.Font("휴먼편지체", 80.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblFormTitle1.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.lblFormTitle1.Location = new System.Drawing.Point(12, 9);
+            this.lblFormTitle1.Name = "lblFormTitle1";
+            this.lblFormTitle1.Size = new System.Drawing.Size(550, 139);
+            this.lblFormTitle1.TabIndex = 0;
+            this.lblFormTitle1.Text = "취업 NO.1!";
+            this.lblFormTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFormTitle1.Click += new System.EventHandler(this.lblFormTitle1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(574, 157);
+            this.Controls.Add(this.lblFormTitle1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.Text = "3-1 급훈";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblFormTitle1;
     }
 }
 

@@ -16,5 +16,10 @@ namespace WindowsForms2
         {
             InitializeComponent();
         }
+
+        private void lblFormTitle1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("안녕하세요!");
+        }
     }
 }
